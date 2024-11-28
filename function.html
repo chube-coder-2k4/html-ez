@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang HTML Cơ Bản</title>
+    <style>
+        /* CSS cơ bản */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            margin-right: 15px;
+            color: #0056b3;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        table {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tiêu đề chính -->
+    <h1>Chào mừng đến với trang HTML cơ bản</h1>
+    <p>Đây là một trang web ví dụ minh họa cấu trúc cơ bản của HTML.</p>
+    
+    <!-- Điều hướng -->
+    <nav>
+        <a href="#about">Giới thiệu</a>
+        <a href="#table">Bảng</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <!-- Phần giới thiệu -->
+    <section id="about">
+        <h2>Giới thiệu</h2>
+        <p>HTML (HyperText Markup Language) là ngôn ngữ đánh dấu được sử dụng để xây dựng cấu trúc của trang web. Nó được kết hợp với CSS để định dạng giao diện và JavaScript để thêm tương tác động.</p>
+    </section>
+
+    <!-- Bảng minh họa -->
+    <section id="table">
+        <h2>Bảng thông tin</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tên</th>
+                    <th>Tuổi</th>
+                    <th>Quốc tịch</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nguyễn Văn A</td>
+                    <td>30</td>
+                    <td>Việt Nam</td>
+                </tr>
+                <tr>
+                    <td>Trần Thị B</td>
+                    <td>28</td>
+                    <td>Việt Nam</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Phần liên hệ -->
+    <section id="contact">
+        <h2>Liên hệ</h2>
+        <form>
+            <label for="name">Tên của bạn:</label><br>
+            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn"><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Nhập email của bạn"><br><br>
+            
+            <label for="message">Tin nhắn:</label><br>
+            <textarea id="message" name="message" rows="4" placeholder="Nhập tin nhắn của bạn"></textarea><br><br>
+            
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 - Trang HTML cơ bản</p>
+    </footer>
+</body>
+</html>
